@@ -13,6 +13,7 @@
 		C6AAB5281B81AFD2001EE522 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6AAB5271B81AFD2001EE522 /* Images.xcassets */; };
 		C6AAB52B1B81AFD2001EE522 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6AAB5291B81AFD2001EE522 /* LaunchScreen.xib */; };
 		C6AAB5371B81AFD2001EE522 /* Quartz_2D_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AAB5361B81AFD2001EE522 /* Quartz_2D_AppTests.swift */; };
+		C6AAB5411B81B011001EE522 /* QuartzView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AAB5401B81B011001EE522 /* QuartzView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		C6AAB5301B81AFD2001EE522 /* Quartz 2D AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Quartz 2D AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6AAB5351B81AFD2001EE522 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C6AAB5361B81AFD2001EE522 /* Quartz_2D_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quartz_2D_AppTests.swift; sourceTree = "<group>"; };
+		C6AAB5401B81B011001EE522 /* QuartzView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuartzView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				C6AAB5271B81AFD2001EE522 /* Images.xcassets */,
 				C6AAB5291B81AFD2001EE522 /* LaunchScreen.xib */,
 				C6AAB51E1B81AFD2001EE522 /* Supporting Files */,
+				C6AAB5401B81B011001EE522 /* QuartzView.swift */,
 			);
 			path = "Quartz 2D App";
 			sourceTree = "<group>";
@@ -156,7 +159,9 @@
 		C6AAB5131B81AFD2001EE522 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastSwiftMigration = 0730;
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Sharp Scissors Software";
 				TargetAttributes = {
 					C6AAB51A1B81AFD2001EE522 = {
@@ -212,6 +217,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6AAB5411B81B011001EE522 /* QuartzView.swift in Sources */,
 				C6AAB5231B81AFD2001EE522 /* ViewController.swift in Sources */,
 				C6AAB5211B81AFD2001EE522 /* AppDelegate.swift in Sources */,
 			);
@@ -276,6 +282,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -344,6 +351,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Quartz 2D App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "SharpScissorsSoftware.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -354,6 +362,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Quartz 2D App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "SharpScissorsSoftware.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -372,6 +381,7 @@
 				);
 				INFOPLIST_FILE = "Quartz 2D AppTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "SharpScissorsSoftware.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Quartz 2D App.app/Quartz 2D App";
 			};
@@ -387,6 +397,7 @@
 				);
 				INFOPLIST_FILE = "Quartz 2D AppTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "SharpScissorsSoftware.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Quartz 2D App.app/Quartz 2D App";
 			};
@@ -411,6 +422,7 @@
 				C6AAB53C1B81AFD2001EE522 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C6AAB53D1B81AFD2001EE522 /* Build configuration list for PBXNativeTarget "Quartz 2D AppTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +431,7 @@
 				C6AAB53F1B81AFD2001EE522 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
